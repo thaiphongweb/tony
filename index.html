@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>MY FAVOURITE VIDEO LIST </title>
+  </head>
+  <body>
+    <h1 style="color: #ff0066;">MY FAVOURITE VIDEO LIST </h1>
+    <iframe src="https://www.youtube.com/embed/pxUFdUxCwHg?si=U93tWaofMX4UFrKK"></iframe>
+    <iframe src="https://www.youtube.com/embed/J_nmgntYZHU?si=4jItuRceg-ud8eQR"></iframe>
+    <iframe src="https://www.youtube.com/embed/fkocQ_U_A0M?si=dur-pWLTyJR6csvW"></iframe>
+    <br>
+    <div style="text-align: center;">
+      <h1 style="color: #ff0066;">TYPE YOUR FEELING</h1>
+      <label for="">Enter Name: </label><input type="text" id="name" placeholder="Nhập tên ở đây"><br><br><label for="">Enter Feeling: </label><input type="text" id="feel" placeholder="Nhập cảm nhận ở đây"><br><br><button onclick="Clickme()">Submit</button><br><br><span id="showing" style="color: #ff0066;">Cảm nhận sẽ xuất hiện ở đây sau khi nhấn Submit</span>
+    </div><br>
+    <footer style="text-align: center;">
+      <p>MY VIDEO WEBSITE</p>
+    </footer>
+    <script>
+      var name = document.querySelector("#name");
+      var feel = document.querySelector("#feel");
+      var showing = document.querySelector("#showing");
+      function Clickme() {
+        showing.innerHTML = feel.value;
+      }
+    </script>
+  </body>
+</html>
